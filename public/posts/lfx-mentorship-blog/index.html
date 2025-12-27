@@ -1,0 +1,96 @@
+<!doctype html><html dir=ltr lang=en><head><meta charset=utf-8><meta content="IE=edge" http-equiv=X-UA-Compatible><meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name=viewport><meta content="index, follow" name=robots><title>LFX Linux Kernel Mentorship</title><meta content="blog, personal, tech" name=keywords><meta name=description><link href=https://iamclintgeorge.github.io/posts/lfx-mentorship-blog/ rel=canonical><link href=https://iamclintgeorge.github.io/css/includes/scroll-bar.css rel=stylesheet><link href=https://iamclintgeorge.github.io/css/styles.css rel=stylesheet><link href=https://iamclintgeorge.github.io/css/override.css rel=stylesheet><link href=https://iamclintgeorge.github.io/atom.xml rel=alternate title=RSS type=application/atom+xml><noscript><style>#theme-toggle,.top-link{display:none}</style> <style>@media (prefers-color-scheme:dark){:root{--theme:#1d1e20;--entry:#2e2e33;--primary:#dadadb;--secondary:#9b9c9d;--tertiary:#414244;--content:#c4c4c5;--hljs-bg:#2e2e33;--code-bg:#37383e;--border:#333}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><body id=top><script>if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }</script><header class=header><nav class=nav><div class=logo><a title="Clint's Blog (Alt + H)" accesskey=h href=https://iamclintgeorge.github.io> Clint's Blog </a><div class=logo-switches><button title="(Alt + T)" accesskey=t id=theme-toggle><svg viewbox="0 0 24 24" fill=none height=18 id=moon stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 width=24 xmlns=http://www.w3.org/2000/svg><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg> <svg viewbox="0 0 24 24" fill=none height=18 id=sun stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 width=24 xmlns=http://www.w3.org/2000/svg><circle cx=12 cy=12 r=5></circle><line x1=12 x2=12 y1=1 y2=3></line><line x1=12 x2=12 y1=21 y2=23></line><line x1=4.22 x2=5.64 y1=4.22 y2=5.64></line><line x1=18.36 x2=19.78 y1=18.36 y2=19.78></line><line x1=1 x2=3 y1=12 y2=12></line><line x1=21 x2=23 y1=12 y2=12></line><line x1=4.22 x2=5.64 y1=19.78 y2=18.36></line><line x1=18.36 x2=19.78 y1=5.64 y2=4.22></line></svg></button><ul class=lang-switch><li></ul></div></div><ul id=menu><li><a href=https://iamclintgeorge.github.io/archive title=Archive> <span>Archive</span> </a><li><a href=https://iamclintgeorge.github.io/tags title=Tags> <span>Tags</span> </a><li><a href=https://iamclintgeorge.github.io/search title=Search> <span>Search</span> </a></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://iamclintgeorge.github.io>Home</a> »  <a href=https://iamclintgeorge.github.io/posts/>Posts</a> »  <a href=https://iamclintgeorge.github.io/posts/lfx-mentorship-blog/>LFX Linux Kernel Mentorship</a></div><h1 class=post-title>LFX Linux Kernel Mentorship</h1><div class=post-meta><span title="2025-12-27 00:00:00 +0000">2025-12-27</span> · 6 min · </div></header><div class=toc><details><summary title="(Alt + C)" accesskey=c><span class=details>Table of Contents</span></summary> <div class=inner><ul><li><a aria-label="Getting Accepted" href=#getting-accepted>Getting Accepted</a><li><a aria-label="Initial Stage" href=#initial-stage>Initial Stage</a><li><a aria-label="Getting Patches Accepted" href=#getting-patches-accepted>Getting Patches Accepted</a> <ul><li><a aria-label="NOTE: Make sure to test the patches well before you send, regardless of how minor the change may be!!" href=#note-make-sure-to-test-the-patches-well-before-you-send-regardless-of-how-minor-the-change-may-be>NOTE: Make sure to test the patches well before you send, regardless of how minor the change may be!!</a></ul><li><a aria-label=Conclusion href=#conclusion>Conclusion</a></ul></div></details></div><div class=post-content><p>I have been a Linux user for quite a long time now and have always been curious about how the internals work. My first exposure to Linux was during my diploma in Mechanical Engineering, when I was exploring alternatives to paid software such as Windows and AutoCAD. That was when I came across the world of FOSS (Free and Open Source Software), with Linux leading the way. Ever since then, I have tried to contribute to open-source projects as much as my ability allows.<h1 id=getting-accepted>Getting Accepted<a aria-hidden=true class=anchor hidden href=#getting-accepted>#</a></h1><p>I remember one day coming across a post on LinkedIn about the Linux Kernel Mentorship program by The Linux Foundation. I was very fascinated by the program and took the logical step of putting in the work to learn more about it.<p>The program had prerequisite tasks required to qualify as an applicant. These tasks included essential exercises that a mentee would go through during the course of the program, such as building the kernel from source, writing kernel modules, decoding stack traces, and creating patches starting with simple documentation changes. Each task taught me a lot and helped me realize how much I didn’t know about software development, it was truly a humbling experience.<h1 id=initial-stage>Initial Stage<a aria-hidden=true class=anchor hidden href=#initial-stage>#</a></h1><p>I remember it was midnight while I was working on a project when I received an email from Shuah Khan, who would soon become my mentor for the program, informing me that I had been selected. I was overjoyed, but there was also a sense of fear, as I had very little exposure to kernel internals and it was my first time getting hands-on experience with the Linux Kernel.<p>At the early stage, although I had experience with some low-level projects, the Linux Kernel seemed far beyond my ability. Its internals were very complex for someone like me, who only had experience as an end-user. I vividly remember Shuah in our onboarding meeting saying something along the lines (paraphrased): <em>“Do you find the kernel overwhelming? Good! It is supposed to be overwhelming; this is where learning happens.”</em> This statement encouraged me to push myself and put in more effort.<p>In the early stages, I used to find navigating the code base difficult, but with time and experience in certain subsystems, I became more familiar with the kernel. I consider myself fortunate to have mentors who are so mature and experienced in their respective fields, such as Shuah Khan, David Hunter, and Khalid Aziz. During the mentorship, they taught me many new things that I might not have learned otherwise, including using QEMU for cross-platform compiling and testing modules on different system architectures. I vividly remember Shuah’s tutorials and still maintain my notes from her talks regarding techniques for better debugging of the kernel code base. David Hunter was also immensely helpful, gracefully correcting many of my mistakes in the patches I submitted as a beginner.<h1 id=getting-patches-accepted>Getting Patches Accepted<a aria-hidden=true class=anchor hidden href=#getting-patches-accepted>#</a></h1><p>Initially, as a newcomer to Linux Kernel development, I struggled to find valid issues. Many problems I encountered seemed too complex to attempt, and I spent a lot of time trying to solve issues I did not fully understand. This led to some lost time, which was critical since the mentorship program is only three months long, and I was expected to have at least five patches accepted into the upstream source tree.<p>I started off using static analysis tools such as Smatch, Sparse, and Clang, but I encountered some false positives and eventually stopped relying on them. By then, I had already spent around two months searching for issues. Although I found some good problems, they involved major changes, and due to time constraints, I refrained from working on them.<p>Eventually, I created a patch series containing three patches for the <code>hangcheck-timer</code> driver module, using the checkpatch.pl script to identify minor code-style issues. These included:<ul><li>Fixing an incorrect format specifier (<code>%Ld</code> → <code>%lld</code>)<li>Updating the internal API for consistent debugging of warning logs (<code>printk(KERN_CRIT ...)</code> → <code>pr_crit(...)</code>)<li>Minor code spacing adjustments</ul><p>Initially, my patches had some issues pointed out by Greg Kroah-Hartman, the mentor for the Character Device Driver subsystem. Thankfully, he was quick in giving feedback, and I submitted a v2 of the patch, which was later accepted.<p>After these patches, I worked on the <code>dummy_hcd</code> module, part of the USB subsystem. I created a patch series for it, but it was rejected by Greg Kroah-Hartman, which made sense, as I wasn’t aware enough to know that my changes could potentially break systems. Greg was very gracious about it, and David (my mentor) guided me through the mistakes. With help from David and Alan Stern, I was able to overcome the rejection.<p>One of the graduation criteria for the program was that the five accepted patches should not be simple spacing or spelling corrections. I needed three more substantive patches. After careful search and debugging, I found issues in the kselftest of certain subsystems: filesystems, ublk, and coredump. The patches were:<ul><li><strong>Filesystem/anon_inode</strong>: Replaced a NULL pointer passed as a function parameter with an empty array containing a NULL pointer<li><strong>ublk/kublk</strong>: Updated <code>_Static_assert</code> to use C11 syntax instead of C23 syntax<li><strong>Coredump</strong>: Replaced dereferencing a NULL pointer with <code>__builtin_trap()</code> to intentionally crash the program safely, as the compiler might otherwise optimize away the crash <br> <br></ul><h4 id=note-make-sure-to-test-the-patches-well-before-you-send-regardless-of-how-minor-the-change-may-be>NOTE: Make sure to test the patches well before you send, regardless of how minor the change may be!!<a aria-hidden=true class=anchor hidden href=#note-make-sure-to-test-the-patches-well-before-you-send-regardless-of-how-minor-the-change-may-be>#</a></h4><h1 id=conclusion>Conclusion<a aria-hidden=true class=anchor hidden href=#conclusion>#</a></h1><p>I am very grateful for the opportunity to interact with experienced mentors such as Greg Kroah-Hartman and Alan Stern. Their guidance and critical feedback helped me navigate the development process confidently. I am thankful to have learned how the Linux Kernel, one of the world’s largest and fastest-moving open-source projects, operates at scale and the crucial role of trust, the high-quality standards expected by maintainers, and the rigor of the development process.<p>Overall, i can say with confidence that this mentorship experience was one of the best learning experience thus far i had in my life considering the amount of learning and complexity i came across. I would want to thank Shuah Khan, David Hunter, Khalid Aziz and The Linux Foundation for taking their time in making the Mentorship a reality. Hope to cross paths again.</div><footer class=post-footer><ul class=post-tags><li><a href=https://iamclintgeorge.github.io/tags/linux/>Linux</a><li><a href=https://iamclintgeorge.github.io/tags/lfx/>LFX</a></ul><nav class=paginav><a class=prev href=https://iamclintgeorge.github.io/search/> <span class=title>« Prev</span> <br> <span>Search</span> </a></nav></footer></article></main><footer class=footer><span>© 2025 <a href=https://iamclintgeorge.github.io></a></span><span> Powered by <a rel="noopener noreferrer" href=https://www.getzola.org/ target=_blank>Zola</a> & <a href=https://github.com/cydave/zola-theme-papermod rel=noopener target=_blank>PaperMod</a> </span></footer><a aria-label="go to top" title="Go to Top (Alt + G)" accesskey=g class=top-link href=#top id=top-link> <svg viewbox="0 0 12 6" fill=currentColor xmlns=http://www.w3.org/2000/svg><path d="M12 6H0l6-6z"/></svg> </a><script>let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });</script><script>var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };</script><script>document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })</script><script>document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                var content = codeblock.textContent;
+                if(codeblock.firstChild.tagName == 'TABLE') {
+                    content = Array(...codeblock.firstChild.getElementsByTagName('span')).map((span) => { return span.textContent; }).join('');
+                }
+                navigator.clipboard.writeText(content);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            // td containing LineNos
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            // table containing LineNos and code
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            // code blocks not having highlight as parent class
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });</script>

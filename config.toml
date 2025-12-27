@@ -1,0 +1,58 @@
+base_url = "https://iamclintgeorge.github.io"
+theme = "papermod"
+compile_sass = true
+build_search_index = true
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+minify_html = true
+
+taxonomies = [
+    { name = "tags", feed = true, paginate_by = 10 },
+    { name = "categories", paginate_by = 10 }
+]
+
+[search]
+include_title = true
+include_description = false
+include_path = false
+include_content = true
+index_format = "elasticlunr_json"
+
+[markdown]
+highlight_code = true
+
+[extra]
+[extra.papermod]
+title = "Clint's Blog"
+default_theme = "auto"
+theme = "light"  # Add this line - can be "light", "dark", or "auto"
+language_direction = "ltr"
+keywords = ["blog", "personal", "tech"]
+show_theme_toggle = true
+show_scroll_to_top = true
+show_code_copy_buttons = true
+show_reading_time = true
+show_word_count = false
+show_post_nav_links = true
+show_post_meta = true
+default_toc_open = false
+show_post_edit_button = false
+show_archive_year_count = true
+show_archive_month_count = true
+date_format = "%Y-%m-%d"
+
+navigation = [
+    { url = "$BASE_URL/archive", title = "Archive" },
+    { url = "$BASE_URL/tags", title = "Tags" },
+    { url = "$BASE_URL/search", title = "Search" },
+]
+
+home_title = "Hi!"
+home_content = "I'm Clint George, a software engineer with experience in building reliable and scalable softwares. You will find blogs related to my Linux Kernel Mentorship and other useful articles here."
+
+social_icons = [
+    { url = "https://github.com/iamclintgeorge", title = "GitHub", icon = "github" },
+  # { url = "$BASE_URL/atom.xml", title = "RSS", icon = "rss" },
+    { url = "https://linkedin.com/in/iamclintgeorge", title = "Linkedin", icon = "linkedin" },
+
+]
